@@ -61,13 +61,13 @@ while True:
             delname = input('请输入需要删除的学生名字:\n')
             if (delname in name):
                 name.pop(delname)
-                f = input('已删除,继续查询输入‘T’，返回主菜单输入‘F’\n请输入：')
+                f = input('已删除,继续删除输入‘T’，返回主菜单输入‘F’\n请输入：')
                 if f == 'F':
                     break
                 else:
                     continue
             else:
-                f=input('输入有误,继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
+                f=input('输入有误,继续删除输入‘T’，输入‘F’返回主菜单\n请输入：')
                 if f == 'F':
                     break
                 else:
