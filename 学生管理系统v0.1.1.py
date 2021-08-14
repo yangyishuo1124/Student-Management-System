@@ -1,4 +1,3 @@
-
 name = {'liming': [100, 65, 84]}
 jishu1 = 0
 
@@ -67,7 +66,7 @@ while True:
                 else:
                     continue
             else:
-                f=input('输入有误,继续删除输入‘T’，输入‘F’返回主菜单\n请输入：')
+                f = input('输入有误,继续删除输入‘T’，输入‘F’返回主菜单\n请输入：')
                 if f == 'F':
                     break
                 else:
@@ -98,7 +97,7 @@ while True:
                 else:
                     continue
 
-    if (a==5):
+    if (a == 5):
         #预留
         jishu1 += 1 
         if jishu1 <= 3:
@@ -125,5 +124,3 @@ while True:
     if (a == 0):
         print('期待您的下次使用')
         break
-
-
