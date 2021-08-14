@@ -32,7 +32,7 @@ while True:
         print(name)
         f = input('输入‘F’回到主菜单')
         if f == 'F':
-            f ='' 
+            f = '' 
             continue
 
     if (a == 2):
@@ -85,14 +85,14 @@ while True:
             if (findname in name):
                 
                 print(name[findname])
-                f=input('已完成，继续查询输入‘T’，回到主菜单输入‘F’\n请输入：')
-                if f=='F':
+                f = input('已完成，继续查询输入‘T’，回到主菜单输入‘F’\n请输入：')
+                if f == 'F':
                     break
                 else:
                     continue
                 
             else:
-                f=input('输入有误，继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
+                f = input('输入有误，继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
                 if f == 'F':
                     break
                 else:
@@ -101,17 +101,17 @@ while True:
     if (a==5):
         #预留
         jishu1 += 1 
-        if jishu1 <=3:
+        if jishu1 <= 3:
             print('===================================')
             print('此功能尚未开发，期待后续新版本更新')
             print('===================================')
             continue
-        if jishu1 >= 3 <=4:
+        if jishu1 >= 3 <= 4:
             print('===================================')
             print('都说了没开发呢，就别按了')
             print('===================================')
             continue
-        if jishu1 >= 5 <=6:
+        if jishu1 >= 5 <= 6:
             print('===================================')
             print('你再按也™没有，憋按了')
             print('===================================')
