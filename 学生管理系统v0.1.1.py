@@ -1,4 +1,3 @@
-from typing import Match
 
 name = {'liming': [100, 65, 84]}
 jishu1 = 0
@@ -33,7 +32,7 @@ while True:
         print(name)
         f = input('输入‘F’回到主菜单')
         if f == 'F':
-            f =''
+            f ='' 
             continue
 
     if (a == 2):
