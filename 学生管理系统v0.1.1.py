@@ -2,6 +2,8 @@ name = {'liming': [100, 65, 84]}
 jishu1 = 0
 
 def  begin():
+
+
     print('填写所需选项的序号:')
     print('1: 列出所有成绩')
     print('2：增加或更改学生和成绩')
@@ -12,6 +14,8 @@ def  begin():
     print('0：退出系统')
 
 def allg():
+
+    
     for i in name:
         allgrade = 0
         if len(name[i]) == 3:
@@ -20,7 +24,7 @@ def allg():
             name[i].append(allgrade)
         
 print('欢迎使用学生管理系统v0.2.1\n©Copyright2021杨一朔.AllRightsReserved\n按回车键开始使用')
-input()
+p = input ()
 
 while True:
     allg()
@@ -34,7 +38,7 @@ while True:
             print(stu+':'+str(name[stu]))
         f = input('输入‘F’回到主菜单')
         if f == 'F':
-            f =''
+            f = ''
             continue
 
     if (a == 2):
@@ -63,7 +67,7 @@ while True:
                 else:
                     continue
             else:
-                f=input('输入有误,继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
+                f = input('输入有误,继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
                 if f == 'F':
                     break
                 else:
@@ -75,37 +79,35 @@ while True:
             if (findname in name):
                 
                 print(name[findname])
-                f=input('已完成，继续查询输入‘T’，回到主菜单输入‘F’\n请输入：')
-                if f=='F':
+                f = input('已完成，继续查询输入‘T’，回到主菜单输入‘F’\n请输入：')
+                if f == 'F':
                     break
                 else:
                     continue
                 
             else:
-                f=input('输入有误，继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
+                f = input('输入有误，继续查询输入‘T’，输入‘F’返回主菜单\n请输入：')
                 if f == 'F':
                     break
                 else:
                     continue
 
-    if (a==5):
-        paixu={}
-        name5=name.copy()
-        while len(name5)>0:
-            mix=0
-            mixname=''
+    if (a == 5):
+        paixu = {}
+        name5 =n ame.copy()
+        while len(name5) > 0:
+            mix = 0
+            mixname = ''
             for name1 in name5:
-                allgrad=name5[name1][3]
-                if allgrad>mix:
-                    mix=allgrad
-                    mixname=name1
+                allgrad = name5[name1][3]
+                if allgrad > mix:
+                    mix = allgrad
+                    mixname = name1
             paixu.update({mixname: name5[mixname]})
             name5.pop(mixname)
         for stu in paixu:
-            print(stu+':'+str(paixu[stu]))
+            print (stu+':'+str(paixu[stu]))
 
     if (a == 0):
         print('期待您的下次使用')
         break
-
-
