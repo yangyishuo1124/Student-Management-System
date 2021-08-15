@@ -92,7 +92,7 @@ while True:
 
     if (a == 5):
         paixu = {}
-        name5 =n ame.copy()
+        name5 = name.copy()
         while len(name5) > 0:
             mix = 0
             mixname = ''
