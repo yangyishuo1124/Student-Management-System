@@ -1,6 +1,25 @@
 name = {'liming': [100, 65, 84]}
 jishu1 = 0
 
+import tkinter.messagebox
+import requests
+VERSION_NOW='v0.1.1'#0.1.1
+UPDATE_DOWNLOAD_URL='https://myguthub.coding.net/api/user/myguthub/project/student-management-system/depot/Student-Management-System/git/releases/attachments/download/86079' #新版本文件
+VERSION_URL='https://myguthub.coding.net/p/student-management-system/d/Student-Management-System/git/releases/3'#最新版本号
+
+try:
+    ver=request.get(VERSION_URL)#获取最新版本号
+   #然后自己根据版本号对版本进行对比处理
+    #这里省略
+    #直接跳到更新代码
+    tkinter.messagebox.showwarning(title='提示', message='发现新版本，点击确定开始更新。更新时间跟网速有关，请耐心等待！')
+    newFile=requests.get(UPDATE_DOWNLOAD_URL)
+    with open("newFile_update.zip","wb") as fp:
+        fp.write(newFile.content)
+except:
+    tkinter.messagebox.showwarning(title='警告', message='更新失败，请检查网络！')
+tkinter.messagebox.showwarning(title='提示', message='新版本软件下载完成！请在当前软件目录查看(文件名：newFile_update.zip)并使用新版本。') 
+ 
 
 def  begin():
     print('填写所需选项的序号:')
