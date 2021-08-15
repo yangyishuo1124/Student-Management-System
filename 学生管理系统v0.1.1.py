@@ -1,9 +1,3 @@
-from typing import Match
-
-'''import ptvsd
-ptvsd.enable_attach(address = ('192.168.101.86', 3000))
-ptvsd.wait_for_attach()'''
-
 name = {'liming': [100, 65, 84]}
 jishu1 = 0
 
