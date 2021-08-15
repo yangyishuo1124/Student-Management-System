@@ -22,7 +22,7 @@ def allg():
             name[i].append(allgrade)
         
 print('欢迎使用学生管理系统v0.2.1\n©Copyright2021杨一朔.AllRightsReserved\n按回车键开始使用')
-p = input ()
+p = input()
 
 while True:
     allg()
@@ -104,7 +104,7 @@ while True:
             paixu.update({mixname: name5[mixname]})
             name5.pop(mixname)
         for stu in paixu:
-            print (stu+':'+str(paixu[stu]))
+            print(stu+':'+str(paixu[stu]))
 
     if (a == 0):
         print('期待您的下次使用')
