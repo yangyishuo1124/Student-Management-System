@@ -99,7 +99,7 @@ while True:
                 if allgrad>mix:
                     mix=allgrad
                     mixname=name1
-            paixu.update({mixname:name5[mixname]})
+            paixu.update({mixname: name5[mixname]})
             name5.pop(mixname)
         for stu in paixu:
             print(stu+':'+str(paixu[stu]))
