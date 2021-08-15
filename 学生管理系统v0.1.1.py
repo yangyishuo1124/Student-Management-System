@@ -1,9 +1,8 @@
 name = {'liming': [100, 65, 84]}
 jishu1 = 0
 
+
 def  begin():
-
-
     print('填写所需选项的序号:')
     print('1: 列出所有成绩')
     print('2：增加或更改学生和成绩')
@@ -13,9 +12,8 @@ def  begin():
     #print('6：联网检查更新（未开发）')
     print('0：退出系统')
 
-def allg():
 
-    
+def allg():
     for i in name:
         allgrade = 0
         if len(name[i]) == 3:
